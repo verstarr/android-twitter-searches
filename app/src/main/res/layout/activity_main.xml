@@ -1,0 +1,73 @@
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:columnCount="1"
+    android:orientation="horizontal"
+    android:longClickable="true">
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/queryEditText"
+        android:layout_gravity="fill_horizontal"
+        android:hint="@string/quertyPrompt"
+        android:imeOptions="actionNext"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tagEditText"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:hint="@string/tagPrompt"
+            android:imeOptions="actionDone"/>
+
+        <ImageButton
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:id="@+id/saveButton"
+            android:background="@mipmap/ic_save_button"
+            android:contentDescription="@string/saveDescription" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="fill"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="#ff56a3ff"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/taggedSearches"
+            android:id="@+id/textView"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal" />
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="fill"
+            android:layout_marginBottom="@dimen/tagged_searches_padding"
+            android:layout_marginTop="@dimen/tagged_searches_padding"
+            android:layout_weight="1" />
+    </LinearLayout>
+</GridLayout>

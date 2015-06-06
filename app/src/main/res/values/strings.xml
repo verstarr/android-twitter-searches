@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Twitter Search</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="quertyPrompt">Enter Twitter search query here</string>
+    <string name="tagPrompt">Tag your query</string>
+    <string name="saveDescription">Touch this button to save your tagged search</string>
+    <string name="taggedSearches">Tagged Searches</string>
+    <string name="missingMessage">You are missing either a query or tag</string>
+    <string name="understand">I Understand</string>
+    <string name="searchURL">http://mobile.twitter.com/search/</string>
+    <string name="sharedEditDelTitle">Shared, Edit, or Delete tag: \"%s\"</string>
+    <string name="cancel">Cancel</string>
+    <string name="shareSubject">Twitter search that might interest you</string>
+    <string name="shareMessage">Check out the results of this Twitter search: %s</string>
+    <string name="shareSearch">Share Search to:</string>
+    <string name="confirmMessage">Are you sure you want to delete \"%s\"?</string>
+    <string name="delete">Delete</string>
+</resources>
